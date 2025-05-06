@@ -19,7 +19,7 @@ const Navbar = () => {
         </ul>
         <div className='flex items-center gap-2'> 
             <Button className='hover:bg-background-200 hover:ring-1 hover:ring-foreground-300 transition-all duration-200' variant="outline"><Link href={'/contact'}>Hire Us</Link></Button>
-            <Button className='hover:bg-background-200 hover:ring-1 hover:ring-foreground-300 transition-all duration-200' variant="outline"><Link target='_blank' href={'https://tailwindcss.com'}><Github/></Link></Button>
+            <Button className='hover:bg-background-200 hover:ring-1 hover:ring-foreground-300 transition-all duration-200' variant="outline"><Link target='_blank' href={'https://github.com/Maysur-Rahman-Bhuiyan/Uperoo'}><Github/></Link></Button>
             <ModeToggle/>
         </div>
     </nav>
