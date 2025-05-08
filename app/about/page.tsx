@@ -36,34 +36,72 @@ export default function About() {
       </section>
 
       {/* Timeline Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-6 max-w-4xl">
-          <h3 className="text-3xl font-bold mb-16 text-center">Our Journey</h3>
-          <div className="space-y-12 relative">
-            {/* Timeline line */}
-            <div className="absolute left-1/2 w-1 h-full bg-primary transform -translate-x-1/2"></div>
+      {/* Timeline Section */}
+<section className="py-20">
+  <div className="container mx-auto px-6 max-w-4xl">
+    <h3 className="text-3xl font-bold mb-16 text-center">Our Journey</h3>
 
-            {/* Timeline Items */}
-            {[
-              { year: "2010", title: "Founded in Silicon Valley", content: "Started with 5 passionate developers in a shared workspace" },
-              { year: "2014", title: "First Major Client", content: "Delivered enterprise solution for Fortune 500 company" },
-              { year: "2018", title: "Global Expansion", content: "Opened offices in 3 continents with 100+ employees" },
-              { year: "2023", title: "AI Revolution", content: "Launched industry-leading AI development platform" },
-            ].map((item, index) => (
-              <div key={item.year} className={`relative flex ${index % 2 === 0 ? "justify-start" : "justify-end"}`}>
-                <div className={`w-full md:w-1/2 p-6 rounded-xl ${index % 2 === 0 ? "md:mr-6" : "md:ml-6"} border-2 border-primary transition-all`}>
-                  <div className="flex items-center gap-4 mb-3">
-                    <div className="w-4 h-4 bg-blue-500 rounded-full"></div>
-                    <span className="font-bold text-blue-400">{item.year}</span>
-                  </div>
-                  <h4 className="text-xl font-bold mb-2">{item.title}</h4>
-                  <p className="text-gray-400">{item.content}</p>
-                </div>
+    <div className="relative">
+      {/* Vertical line for md and up */}
+      <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-primary transform -translate-x-1/2"></div>
+
+      <div className="space-y-12">
+        {[
+          { year: "2010", title: "Founded in Silicon Valley", content: "Started with 5 passionate developers in a shared workspace" },
+          { year: "2014", title: "First Major Client", content: "Delivered enterprise solution for Fortune 500 company" },
+          { year: "2018", title: "Global Expansion", content: "Opened offices in 3 continents with 100+ employees" },
+          { year: "2023", title: "AI Revolution", content: "Launched industry-leading AI development platform" },
+        ].map((item, index) => (
+          <div
+            key={item.year}
+            className={`relative md:flex md:items-center ${
+              index % 2 === 0 ? "md:justify-start" : "md:justify-end"
+            }`}
+          >
+            {/* Spacer for alignment */}
+            {index % 2 !== 0 && (
+              <div className="hidden md:block md:w-1/2" />
+            )}
+
+            {/* Timeline card */}
+            <div
+              className={`
+                relative w-full md:w-1/2 bg-background border-2 border-primary rounded-xl p-6 shadow-md
+                ${index % 2 === 0 ? "md:ml-6" : "md:mr-6"}
+              `}
+            >
+              {/* Dot */}
+              <div
+                className={`hidden md:block absolute top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-blue-500 z-10 
+                  ${index % 2 === 0 ? '-left-8' : '-right-8'}`}
+              ></div>
+
+
+              {/* Mobile dot + year */}
+              <div className="md:hidden flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 bg-blue-500 rounded-full" />
+                <span className="font-bold text-blue-400">{item.year}</span>
               </div>
-            ))}
+
+              {/* Desktop year */}
+              <div className="hidden md:block text-blue-400 font-bold mb-2">
+                {item.year}
+              </div>
+
+              <h4 className="text-xl font-bold mb-2">{item.title}</h4>
+              <p className="text-gray-400">{item.content}</p>
+            </div>
+
+            {index % 2 === 0 && (
+              <div className="hidden md:block md:w-1/2" />
+            )}
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Values Section */}
       <section className="py-20 container mx-auto px-6">
