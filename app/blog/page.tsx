@@ -3,40 +3,40 @@ import React from 'react';
 
 const posts = [
   {
-    title: 'Post 1',
-    content: 'This is the content of post 1',
+    title: 'What is HTML?',
+    content: 'What is HTML?',
     image: '/developer.jpg',
-    href: '/'
+    href: '/blogpost/what-is-html'
   },
   {
-    title: 'Post 2',
-    content: 'This is the content of post 2',
+    title: 'What is CSS?',
+    content: 'What is CSS?',
     image: '/developer.jpg',
-    href: '/about'
+    href: '/blogpost/what-is-css'
   },
   {
-    title: 'Post 3',
-    content: 'This is the content of post 3',
+    title: 'what-is-javascript',
+    content: 'what-is-javascript',
     image: '/developer.jpg',
-    href: '/services'
+    href: '/blogpost/what-is-javascript'
   },
   {
-    title: 'Post 4',
-    content: 'This is the content of post 4',
+    title: 'getting-started-with-react',
+    content: 'getting-started-with-react',
     image: '/developer.jpg',
-    href: '/about'
+    href: '/blogpost/getting-started-with-react'
   },
   {
-    title: 'Post 5',
-    content: 'This is the content of post 5',
+    title: 'responsive-design-basics',
+    content: 'responsive-design-basics',
     image: '/developer.jpg',
-    href: '/pricing'
+    href: '/blogpost/responsive-design-basics'
   },
   {
-    title: 'Post 6',
-    content: 'This is the content of post 6',
+    title: 'why-learn-web-development',
+    content: 'why-learn-web-development',
     image: '/developer.jpg',
-    href: '/contact'
+    href: '/blogpost/why-learn-web-development'
   },
 ];
 
