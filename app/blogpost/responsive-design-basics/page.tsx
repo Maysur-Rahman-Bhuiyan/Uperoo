@@ -9,13 +9,13 @@ const Page = () => {
         className="w-full h-auto rounded-2xl shadow-lg mb-6"
       />
       <h1 className="text-4xl font-bold mb-4">Responsive Design Basics</h1>
-      <p className="text-lg text-gray-700 leading-relaxed mb-4">
+      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
         Responsive design ensures your website looks great on all screen sizes — from phones to desktops.
       </p>
-      <p className="text-lg text-gray-700 leading-relaxed mb-4">
+      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
         It involves using flexible layouts, media queries, and scalable assets to adapt to the user’s device.
       </p>
-      <p className="text-lg text-gray-700 leading-relaxed">
+      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
         Mastering responsive design is essential in today’s mobile-first world, enhancing usability and SEO.
       </p>
     </div>
