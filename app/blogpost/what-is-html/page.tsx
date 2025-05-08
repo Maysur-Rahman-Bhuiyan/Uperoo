@@ -19,7 +19,7 @@ const Page = () => {
         It provides the basic structure of a webpage, which is enhanced and modified by other technologies like CSS and JavaScript.
       </p>
 
-      <p className="text-lg text-gray-700 leading-relaxed mb-4">
+      <p className="text-lg text-gray-700 leading-relax`ed mb-4">
         HTML uses a series of elements, represented by tags, to define the content and layout of a document.
         These elements include headings, paragraphs, links, images, and many others.
       </p>
