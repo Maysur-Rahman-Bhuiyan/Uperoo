@@ -62,7 +62,7 @@ export default function Pricing() {
                 ))}
               </ul>
               <button className={`w-full py-3 rounded-lg transition-all ${tier.highlight ? "bg-blue-600 hover:bg-blue-700 text-white" : "bg-gray-800 hover:bg-gray-700 text-white"}`}>
-                Get Started
+                <Link href={'/contact'}>Get Started</Link>
               </button>
             </div>
           ))}

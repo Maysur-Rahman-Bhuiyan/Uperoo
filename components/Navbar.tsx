@@ -14,6 +14,7 @@ const Navbar = () => {
         <ul className='flex items-center justify-center gap-4 font-medium'>
             <li className='hover:scale-110 transition-transform'><Link href="/">Home</Link></li>
             <li className='hover:scale-110 transition-transform'><Link href="/about">About</Link></li>
+            <li className='hover:scale-110 transition-transform'><Link href="/blog">Blog</Link></li>
             <li className='hover:scale-110 transition-transform'><Link href="/services">Services</Link></li>
             <li className='hover:scale-110 transition-transform'><Link href="/pricing">Pricing</Link></li>
         </ul>

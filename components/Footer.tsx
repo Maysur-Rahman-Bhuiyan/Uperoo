@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="border-t border-blue-900/50">
+    <footer className="border-t border-blue-900/50 bottom-0">
         <div className="container mx-auto px-6 py-12">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
@@ -14,19 +14,21 @@ const Footer = () => {
               <p className="text-gray-400">Innovating the future of software solutions.</p>
             </div>
             <div>
-              <h4 className="text-lg font-bold mb-4">Products</h4>
+              <h4 className="text-lg font-bold mb-4">Links</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><Link href="#" className="hover:text-blue-500">Platform</Link></li>
-                <li><Link href="#" className="hover:text-blue-500">Solutions</Link></li>
-                <li><Link href="#" className="hover:text-blue-500">Pricing</Link></li>
+                <li><Link href="/" className="hover:text-blue-500">Home</Link></li>
+                <li><Link href="/about" className="hover:text-blue-500">About</Link></li>
+                <li><Link href="/services" className="hover:text-blue-500">Services</Link></li>
+                <li><Link href="/pricing" className="hover:text-blue-500">Pricing</Link></li>
+                <li><Link href="/contact" className="hover:text-blue-500">Contact</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-lg font-bold mb-4">Company</h4>
+              <h4 className="text-lg font-bold mb-4">Expertise</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><Link href="#" className="hover:text-blue-500">About</Link></li>
-                <li><Link href="#" className="hover:text-blue-500">Careers</Link></li>
-                <li><Link href="#" className="hover:text-blue-500">Blog</Link></li>
+                <li><Link href="#" className="hover:text-blue-500">Web Development</Link></li>
+                <li><Link href="#" className="hover:text-blue-500">MERN Development</Link></li>
+                <li><Link href="#" className="hover:text-blue-500">Database Integrations</Link></li>
               </ul>
             </div>
             <div>
