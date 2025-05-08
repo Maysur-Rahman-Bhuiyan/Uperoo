@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import React from 'react';
 
@@ -59,9 +60,11 @@ const Page = () => {
                 {post.title}
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mb-4">{post.content}</p>
-              <button className="mt-auto bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-200">
-                <Link href={post.href}>Read More</Link>
-              </button>
+              <Link href={post.href}>
+                <Button className="mt-auto bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-200">
+                  Read More
+                </Button>
+              </Link>
             </div>
           </div>
         ))}
